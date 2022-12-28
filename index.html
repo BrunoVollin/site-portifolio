@@ -9,30 +9,34 @@
     <link rel="stylesheet" href="css/section1.css">
     <link rel="stylesheet" href="css/section_courses.css">
     <link rel="stylesheet" href="css/section_project.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+        class="float" target="_blank">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        <title>Document</title>
 </head>
 
 <body>
     <ul id="menu">
-        <li class="menu-item"><a href="#project-wrapper">Projetos</a></li>
-        <li class="menu-item"><a href="#courses-wrapper">Cursos Ministrados</a></li>
+        <li class="menu-item home"><a href="#" id="home">Home</a></li>
+        <li class="menu-item project"><a href="#project-wrapper" id="project">Projetos</a></li>
+        <li class="menu-item cources"><a href="#courses-wrapper" id="cource">Cursos Ministrados</a></li>
         <li class="menu-item"><a href="#">Experiência</a></li>
         <li class="menu-item"><a href="#">Contato</a></li>
     </ul>
     <div class="section">
-        <div id="init-wrapper">
+        <div id="home-wrapper">
 
             <div class="wrapper">
                 <div class="container">
@@ -41,17 +45,39 @@
                 </div>
             </div>
             <div class="overlay"></div>
+            <div
+                style=" height: 100%; position: absolute; bottom: 0; z-index: 99999; right: 0; padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+                <a href="https://www.linkedin.com/in/brunovollin/" class="home-icon" class="mr-3" target="_blank">
+                    <iconify-icon icon="uil:linkedin" style="color: white;" width="40" height="40"></iconify-icon>
+                </a>
+                <a href="https://www.youtube.com/@brunovollinprogramacao2001" class="home-icon" class="mr-3"
+                    target="_blank">
+                    <iconify-icon icon="ion:logo-youtube" style="color: white;" width="40" height="40"></iconify-icon>
+                </a>
+                <a href="https://github.com/BrunoVollin" class="home-icon" class="mr-3" target="_blank">
+                    <iconify-icon icon="akar-icons:github-fill" style="color: white;" width="40"
+                        height="40"></iconify-icon>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=35998630329&text=Hello this is the starting message"
+                    target="_blank" class="wp-wrapper">
+                    <iconify-icon icon="ps:whatsapp" class="wp-icon" style="color: white;" width="50"
+                        height="50"></iconify-icon>
+
+                </a>
+            </div>
         </div>
     </div>
 
 
     <div class="section">
         <div id="project-wrapper">
-            <div class="card text-white bg-dark mt-5" style="width: 18rem;">
+            <div class="card text-white bg-dark mr-3 mt-5" style="width: 18rem;">
                 <img src="image/ina.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Inacoin</h5>
-                    <p class="card-text" style="font-size: small;">A nossa criptomoeda foi criada com o uso do Python no back-end, que é
+                    <p class="card-text" style="font-size: small;">A nossa criptomoeda foi criada com o uso do Python no
+                        back-end, que é
                         responsável por fazer a interação com os contratos da rede Etherium. Para o front-end, foi
                         utilizado o React Native, que permitiu a criação de um aplicativo de fácil uso e com aparência
                         elegante e robusta.</p>
@@ -84,11 +110,12 @@
                     </a>
                 </div>
             </div>
-            <div class="card text-white bg-dark m-3 mt-5" style="width: 18rem;">
+            <div class="card text-white bg-dark mr-3 mt-5" style="width: 18rem;">
                 <img src="image/help.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Help Remember</h5>
-                    <p class="card-text" style="font-size: small;">Um aplicativo desenvolvido com Flutter foi criado para ajudar as pessoas com
+                    <p class="card-text" style="font-size: small;">Um aplicativo desenvolvido com Flutter foi criado
+                        para ajudar as pessoas com
                         problemas de memória, seguindo os principais protocolos das organizações de saúde. Ele tem como
                         objetivo auxiliar essas pessoas a se lembrarem de tarefas importantes e de outras informações
                         relevantes.
@@ -110,7 +137,8 @@
                 <img src="image/trr.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">InaTerror</h5>
-                    <p class="sm" style="font-size: small;">A nossa aplicação web PWA foi criada com React JS e consome uma API Node JS
+                    <p class="sm" style="font-size: small;">A nossa aplicação web PWA foi criada com React JS e consome
+                        uma API Node JS
                         escrita em Typescript. Essa API é responsável por gerenciar a lógica e a persistência dos dados.
                         No back-end, utilizamos Python para gerar informações sobre os fantasmas através de inteligência
                         artificial. </p>
@@ -141,11 +169,6 @@
             <div class="papercard">
                 <div class="papercard-image-wrapper">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active w-100">
                                 <img class="d-block w-100 papercard-image" src="image/c1.jpg" alt="First slide">
@@ -168,7 +191,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item ">
-                                <video class="papercard-image" autoplay muted controls>
+                                <video class="papercard-image" autoplay muted>
                                     <source class="d-block w-100 papercard-image" src="image/img3.mp4" type="video/mp4">
                                 </video>
                                 <div class="papercard-content">
@@ -226,6 +249,66 @@
 
 
     <script src="js/slider.js"></script>
+    <script>
+
+        // quando clicar em um item do menu mudar cor de fundo para branco
+        // const menuItems = document.querySelectorAll('.menu-item');
+        // menuItems.forEach(item => {
+        //     item.addEventListener('click', () => {
+        //         menuItems.forEach(item => {
+        //             item.classList.remove('active');
+        //         })
+        //         item.classList.add('active');
+        //     })
+        // })
+
+        // quanto aparecer na tela a div courses-wrapper setar menu-item com id course como ativo, 
+        //se aparecer a div project-wrapper setar menu-item com id project como ativo
+        const coursesWrapper = document.querySelector('#courses-wrapper');
+        const projectWrapper = document.querySelector('#project-wrapper');
+        const homeWrapper = document.querySelector('#home-wrapper');
+        const menuItems = document.querySelectorAll('.menu-item');
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        }
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    menuItems.forEach(item => {
+                        item.classList.remove('active');
+                    })
+                    if (entry.target.id === 'courses-wrapper') {
+                        document.querySelector('.cources').classList.add('active');
+                        console.log('courses');
+                    } else if (entry.target.id === 'project-wrapper') {
+                        document.querySelector('.project').classList.add('active');
+                    } else if (entry.target.id === 'home-wrapper') {
+                        document.querySelector('.home').classList.add('active');
+                    }
+                }
+            })
+        }, options)
+
+        observer.observe(coursesWrapper);
+        observer.observe(projectWrapper);
+        observer.observe(homeWrapper);
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
 
 </body>
 
