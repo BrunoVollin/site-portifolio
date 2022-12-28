@@ -83,3 +83,14 @@
   align-items: center;
   z-index: 99999;
 } */
+
+.wrapper-c-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.759);
+  /* shadow */
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 50%;
+}
