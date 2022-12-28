@@ -18,7 +18,7 @@ a {
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
 }
 
@@ -27,7 +27,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 .section {
@@ -220,4 +220,21 @@ body {
     z-index: 9999;
     display: block;
   }
+}
+
+.prof-badge {
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 0.8rem;
+
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
+.prof-badge > span {
+  margin-right: 5px;
 }

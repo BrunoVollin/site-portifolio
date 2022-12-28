@@ -1,0 +1,58 @@
+#xp-wrapper {
+  width: 100%;
+  min-height: 100vh !important;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  align-items: center;
+    justify-content: center;
+}
+
+#xp-container {
+    /* background-color: blue; */
+    width: 40%;
+    padding: 4em 0;
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    #xp-container {
+        width: 80%;
+    }
+}
+
+#xp-container h3, p ,label, h4 {
+    color: white;
+}
+
+#xp-container h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#xp-container h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: white
+}
+#xp-container label {
+    color:rgb(98, 98, 98);
+    display: flex;
+    align-items: center;
+
+}
+
+/* all images inside xp container */
+#xp-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.xp-card {
+    background-color: rgb(60, 60, 60);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}

@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="css/section1.css">
     <link rel="stylesheet" href="css/section_courses.css">
     <link rel="stylesheet" href="css/section_project.css">
+    <link rel="stylesheet" href="css/section_xp.css">
     <link rel="icon" type="image/png" href="image/icon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
         class="float" target="_blank">
@@ -48,7 +55,7 @@
         <li class="menu-item home"><a href="#" id="home">Home</a></li>
         <li class="menu-item project"><a href="#project-wrapper" id="project">Projetos</a></li>
         <li class="menu-item cources"><a href="#courses-wrapper" id="cource">Cursos Ministrados</a></li>
-        <li class="menu-item"><a href="#">Experiência</a></li>
+        <li class="menu-item xp"><a href="#xp-wrapper" id="xp">Experiência</a></li>
         <li class="menu-item"><a href="#">Contato</a></li>
     </ul>
     <div class="section">
@@ -179,6 +186,7 @@
 
     <div class="section">
         <div id="courses-wrapper">
+
             <div class="papercard">
                 <div class="papercard-image-wrapper">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -267,105 +275,146 @@
 
     </div>
 
+    <div class="section">
+        <div id="xp-wrapper">
+            <div id="xp-container">
+                <div class="xp-card">
+
+                    <div id="xp-initial"></div>
+                    <img src="data:image/png;base64,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"
+                        class="" alt="...">
+                    <h3>B2ML, Itajubá</h3>
+                    <h4>Desenvolvedor Mobile</h4>
+                    <label>JULHO 2022 - PRESENTE
+
+                    </label>
+                    <div class="d-flex mb-3">
+
+                        <div class="prof-badge" style="border-color: #017bcc; color:#017bcc; ">
+                            <span>
+                                React Native
+                            </span>
+                            <iconify-icon icon="vscode-icons:file-type-reactts" width="20" height="20"></iconify-icon>
+                        </div>
+                    </div>
+                    <p>Desenvolver aplicações financeiras móveis com React Native, seguindo metodologias ágeis e
+                        aplicando a
+                        tecnologia open finance.</p>
+
+                </div>
+                <div class="xp-card">
+                    <img src="data:image/png;base64,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"
+                        class="" alt="...">
+
+                    <h3>Inatel, Santa Rita do Sapucaí</h3>
+                    <h4>Estagiário Mobile</h4>
+                    <label>MAIO 2021 - JULHO 2022
+
+                    </label>
+                    <div class="d-flex mb-3">
+
+                        <div class="prof-badge" style="border-color: #017bcc; color:#017bcc; ">
+                            <span>
+                                React Native
+                            </span>
+                            <iconify-icon icon="vscode-icons:file-type-reactts" width="20" height="20"></iconify-icon>
+                        </div>
+                        <div class="prof-badge" style="border-color: #46c5fa; color:#46c5fa; ">
+                            <span>
+                                Flutter
+                            </span>
+                            <iconify-icon icon="logos:flutter"></iconify-icon>
+                        </div>
+                    </div>
+                    <p>Integrar as iniciativas de desenvolvimento do laboratório, criar materiais de treinamento e
+                        desenvolver o código base para Hackathons, utilizando as tecnologias Flutter e React Native.
+                    </p>
+                </div>
+                <div class="xp-card">
+                    <img src="data:image/png;base64,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"
+                        class="" alt="...">
+
+                    <h3>Inatel, Santa Rita do Sapucaí</h3>
+                    <h4> Monitor da Disciplina de Tópicos Especiais I.</h4>
+                    <label>FEVEREIRO 2022 - PRESENTE
+                    </label>
+                    <div class="d-flex mb-3">
+
+                        <div class="prof-badge" style="border-color: #017bcc; color:#017bcc; ">
+                            <span>
+                                React Native
+                            </span>
+                            <iconify-icon icon="vscode-icons:file-type-reactts" width="20" height="20"></iconify-icon>
+                        </div>
+                        <div class="prof-badge" style="border-color: #46c5fa; color:#46c5fa; ">
+                            <span>
+                                Flutter
+                            </span>
+                            <iconify-icon icon="logos:flutter"></iconify-icon>
+                        </div>
+                        <!-- node -->
+                        <div class="prof-badge " style="border-color: #3c873a; color:#3c873a; ">
+                            <span>
+                                NodeJS
+                            </span>
+                            <iconify-icon icon="logos:nodejs-icon" width="20" height="20"></iconify-icon>
+                        </div>
+
+
+                    </div>
+                    <p>Dar suporte ao desenvolvimento de projetos dos alunos do 9.º período em tecnologias back-end e
+                        front-end, como NodeJS, ReactJS, Flutter, React Native, Python, entre outras.
+                    </p>
+                </div>
+                <div class="xp-card">
+                    <img src="data:image/png;base64,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"
+                        class="" alt="...">
+
+                    <h3>Inatel, Santa Rita do Sapucaí</h3>
+
+                    <h4>Monitor da Disciplina de Bancos de Dados II.</h4>
+
+                    <label>FEVEREIRO 2022 - PRESENTE</label>
+                    <div class="d-flex mb-3">
+                        <!-- prof-badge mongo db -->
+                        <div class="prof-badge" style="border-color: #4db33d; color:#4db33d; ">
+                            <span>
+                                MongoDB
+                            </span>
+                            <iconify-icon icon="vscode-icons:file-type-mongo" width="20" height="20"></iconify-icon>
+                        </div>
+
+                        <!-- prof-badge neo4j -->
+                        <div class="prof-badge" style="border-color: #46c5fa; color:#46c5fa; ">
+                            <span>
+                                Neo4J
+                            </span>
+                            <iconify-icon icon="simple-icons:neo4j" style="color: #46c5fa;"></iconify-icon>
+                        </div>
+
+                        <!-- pythonn -->
+                        <div class="prof-badge " style="border-color: #fed647; color:#fed647; ">
+                            <span>
+                                Python
+                            </span>
+                            <iconify-icon icon="vscode-icons:file-type-python" width="20" height="20"></iconify-icon>
+                        </div>
+
+
+                    </div>
+                    <p>Criar material, lecionar e avaliar os alunos dos 5.º e 6.º períodos nas tecnologias Python,
+                        MongoDB, Neo4j e Cassandra.
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <script src="js/slider.js"></script>
-    <script>
-
-        // quando clicar em um item do menu mudar cor de fundo para branco
-        // const menuItems = document.querySelectorAll('.menu-item');
-        // menuItems.forEach(item => {
-        //     item.addEventListener('click', () => {
-        //         menuItems.forEach(item => {
-        //             item.classList.remove('active');
-        //         })
-        //         item.classList.add('active');
-        //     })
-        // })
-
-        // quanto aparecer na tela a div courses-wrapper setar menu-item com id course como ativo, 
-        //se aparecer a div project-wrapper setar menu-item com id project como ativo
-        const coursesWrapper = document.querySelector('#courses-wrapper');
-        const projectWrapper = document.querySelector('#project-wrapper');
-        const homeWrapper = document.querySelector('#home-wrapper');
-        const menuItems = document.querySelectorAll('.menu-item');
-        const p_card = document.querySelectorAll('.p-card');
-        const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5
-        }
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    menuItems.forEach(item => {
-                        item.classList.remove('active');
-                        document.querySelector('.wp-wrapper').classList.remove('wp-active');
-                        console.log('remove');
-                    })
-                    if (entry.target.id === 'courses-wrapper') {
-                        document.querySelector('.cources').classList.add('active');
-                        document.querySelector('.wp-wrapper').classList.add('wp-active');
-                        console.log("wp-active");
-
-                        console.log('courses');
-                    } else if (entry.target.id === 'project-wrapper') {
-                        document.querySelector('.project').classList.add('active');
-                        console.log('wp-desactive');
-
-                    } else if (entry.target.id === 'home-wrapper') {
-                        document.querySelector('.home').classList.add('active');
-                        console.log('nada');
-
-                    }
-
-                }
-            })
-        }, options)
-
-        observer.observe(coursesWrapper);
-        observer.observe(projectWrapper);
-        observer.observe(homeWrapper);
-        observer.observe(p_card);
-
-        $('.carousel').on('touchstart', function (event) {
-            const xClick = event.originalEvent.touches[0].pageX;
-            $(this).one('touchmove', function (event) {
-                const xMove = event.originalEvent.touches[0].pageX;
-                const sensitivityInPx = 5;
-
-                if (Math.floor(xClick - xMove) > sensitivityInPx) {
-                    $(this).carousel('next');
-                }
-                else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
-                    $(this).carousel('prev');
-                }
-            });
-            $(this).on('touchend', function () {
-                $(this).off('touchmove');
-            });
-        });
-
-        $('.carousel').carousel({
-            interval: 10000
-        })
-
-        function hide() {
-            document.getElementById("myLinks").style.display = "none";
-        }
-
-        function myFunction() {
-            console.log("xsax");
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "flex";
-            }
-        }
-
-    </script>
-
+    <script src="js/auxi.js"></script>
 
 
 </body>
