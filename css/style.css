@@ -80,10 +80,11 @@ body {
   right: 0;
   z-index: 99999;
   padding: 20px;
+
 }
 
 .wp-icon:hover {
-  background-color: rgb(213, 213, 213);
+    background-color: rgba(254, 255, 238, 0.459);
   border-radius: 50%;
   box-shadow: 0 0 10px 6px rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;

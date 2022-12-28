@@ -34,8 +34,12 @@
 }
 
 .home-icon:hover{
-  background-color: rgb(72, 0, 255);
+  background-color: rgba(254, 255, 238, 0.459);
   box-shadow: 0 0 10px 6px rgba(255, 255, 255, .7);
+}
+/* when homeicon hover set color of iconify-icon */
+.home-icon:hover iconify-icon{
+  color: rgb(0, 0, 0);
 }
 
 .home-icon{
