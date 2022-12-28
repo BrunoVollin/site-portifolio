@@ -58,6 +58,14 @@ body {
   #menu {
     display: none;
   }
+
+  body {
+    scroll-snap-type: none;
+  }
+
+  html {
+    scroll-snap-type: none;
+  }
 }
 
 .menu-item a {
