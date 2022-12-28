@@ -53,6 +53,12 @@ body {
   -webkit-backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.5);
 }
+/* se for um celular desativar menu */
+@media (max-width: 768px) {
+  #menu {
+    display: none;
+  }
+}
 
 .menu-item a {
   color: rgb(255, 255, 255); /* cor padrão */
@@ -81,16 +87,17 @@ body {
   z-index: 99999;
   padding: 20px;
 }
+.wp-wrapper > .wp-icon {
+  transition: 0.5s;
+}
 
 .wp-wrapper:hover > .wp-icon {
-    background-color: rgba(254, 255, 238, 0.459);
+  background-color: rgba(254, 255, 238, 0.459);
   border-radius: 50%;
   box-shadow: 0 0 10px 6px rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;
 
   transition: 0.5s;
-  
-  
 }
 
 /* style scrollbar dark theme */
