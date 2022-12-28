@@ -156,6 +156,14 @@ body {
 /* mobail */
 @media (max-width: 768px) {
   /* Style the navigation menu */
+  .menu-item {
+
+    width: 100%;
+    text-align: center;
+    height: 5rem;
+
+  }
+
   ._topnav {
     position: fixed;
     right: 0;
@@ -168,8 +176,6 @@ body {
 
   /* Hide the links inside the navigation menu (except for logo/home) */
   ._topnav #myLinks {
-    top: 0;
-    right: 0px;
     display: none;
     align-items: center;
     justify-content: center;
