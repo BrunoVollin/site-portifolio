@@ -82,15 +82,16 @@ body {
     animation-fill-mode: forwards;
     /* min hidth possible */
     height: min-content;
-    
   }
 
   .wp-wrapper {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 99999;
     padding: 20px;
+    width: fit-content;
+    height: fit-content;
   }
 }
 
@@ -146,4 +147,71 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: rgb(136, 136, 136);
+}
+
+._topnav {
+  display: none;
+}
+
+/* mobail */
+@media (max-width: 768px) {
+  /* Style the navigation menu */
+  ._topnav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  ._topnav #myLinks {
+    top: 0;
+    right: 0px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+  /* Style navigation menu links */
+  ._topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  ._topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  ._topnav a:hover {
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    color: white;
+  }
+
+  #icon-nav {
+    z-index: 9999;
+    display: block;
+  }
 }

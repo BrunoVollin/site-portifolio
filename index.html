@@ -29,6 +29,21 @@
 </head>
 
 <body>
+    <div class="_topnav">
+        <a href="javascript:void(0);" class="icon" id="icon-nav" onclick="myFunction()">
+            <iconify-icon icon="material-symbols:menu-rounded" style="color: white;" width="50"
+                height="50"></iconify-icon>
+        </a>
+        <div id="myLinks" onclick="hide();">
+            <a class="menu-item home"><a href="#" id="home">Home</a></a>
+            <a class="menu-item project"><a href="#project-wrapper" id="project">Projetos</a></a>
+            <a class="menu-item cources"><a href="#courses-wrapper" id="cource">Cursos Ministrados</a></a>
+            <a class="menu-item"><a href="#">Experiência</a></a>
+            <a class="menu-item"><a href="#">Contato</a></a>
+        </div>
+    </div>
+
+
     <ul id="menu">
         <li class="menu-item home"><a href="#" id="home">Home</a></li>
         <li class="menu-item project"><a href="#project-wrapper" id="project">Projetos</a></li>
@@ -199,7 +214,8 @@
                                     </h2>
                                     <p class="papercard-subtitle">INATEL - 2 de JULHO 2022.</p>
                                     <p class="papercard-text">
-                                        Introdução a Estado, Props, Componentes, Estilização, Navegação, API, Redux, Hooks
+                                        Introdução a Estado, Props, Componentes, Estilização, Navegação, API, Redux,
+                                        Hooks
                                     </p>
                                 </div>
                             </div>
@@ -210,7 +226,8 @@
                                     </h2>
                                     <p class="papercard-subtitle">INATEL - 2 de JULHO 2022.</p>
                                     <p class="papercard-text">
-                                        Introdução a Estado, Props, Componentes, Estilização, Navegação, API, Redux, Hooks
+                                        Introdução a Estado, Props, Componentes, Estilização, Navegação, API, Redux,
+                                        Hooks
                                     </p>
                                 </div>
                             </div>
@@ -223,7 +240,8 @@
                                     </h2>
                                     <p class="papercard-subtitle">INATEL - 2 de JULHO 2022.</p>
                                     <p class="papercard-text">
-                                        Introdução a Estado, Props, Componentes, Estilização, Navegação, API, Redux, Hooks
+                                        Introdução a Estado, Props, Componentes, Estilização, Navegação, API, Redux,
+                                        Hooks
                                     </p>
                                 </div>
                             </div>
@@ -334,6 +352,20 @@
         $('.carousel').carousel({
             interval: 10000
         })
+
+        function hide() {
+            document.getElementById("myLinks").style.display = "none";
+        }
+
+        function myFunction() {
+            console.log("xsax");
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
 
     </script>
 

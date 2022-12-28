@@ -48,7 +48,7 @@
 #wrapper-icons {
   position: absolute;
   bottom: 0;
-  z-index: 99999;
+  z-index: 3;
   right: 0;
   height: 100%;
   padding: 20px;
