@@ -66,6 +66,32 @@ body {
   html {
     scroll-snap-type: none;
   }
+
+  @keyframes example {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.1;
+    }
+  }
+
+  .wp-active {
+    position: flex;
+    animation: example 2s ease-in-out;
+    animation-fill-mode: forwards;
+    /* min hidth possible */
+    height: min-content;
+    
+  }
+
+  .wp-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    padding: 20px;
+  }
 }
 
 .menu-item a {
@@ -95,6 +121,7 @@ body {
   z-index: 99999;
   padding: 20px;
 }
+
 .wp-wrapper > .wp-icon {
   transition: 0.5s;
 }

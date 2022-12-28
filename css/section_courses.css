@@ -3,6 +3,8 @@
  width: 100%;
  height: 100vh;
  position: relative;
+
+
 }
 
 /* paper card */
@@ -12,12 +14,6 @@
 
 .papercard {
 
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  overflow: hidden;
-  border: 1px solid #ddd;
-  border-radius: 4px;; */
  
 }
 
@@ -26,8 +22,6 @@
 
   height: 100vh;
   object-fit: cover;
-  border-radius: 4px 0 0 4px;
-  border: 100px 0 solid black;
 
   /* fix width image size */
   width: 100%;
@@ -55,7 +49,6 @@
   /* glass style */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 0 0 4px 4px;
   padding-bottom: 30px;
     
 }

@@ -45,8 +45,7 @@
                     <p>Desenvolvedor Mobile React Native</p>
                 </div>
             </div>
-            <div
-                style=" height: 100%; position: absolute; bottom: 0; z-index: 99999; right: 0; padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div id="wrapper-icons">
 
                 <a href="https://www.linkedin.com/in/brunovollin/" class="home-icon" class="mr-3" target="_blank">
                     <iconify-icon icon="uil:linkedin" style="color: white;" width="40" height="40"></iconify-icon>
@@ -73,7 +72,7 @@
 
     <div class="section">
         <div id="project-wrapper">
-            <div class="card text-white bg-dark mr-3 mt-5" style="width: 18rem;">
+            <div class="card text-white bg-dark mr-3 mt-5 p-card" style="width: 18rem;">
                 <img src="image/ina.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Inacoin</h5>
@@ -111,7 +110,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card text-white bg-dark mr-3 mt-5" style="width: 18rem;">
+            <div class="card text-white bg-dark mr-3 mt-5 p-card" style="width: 18rem;">
                 <img src="image/help.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Help Remember</h5>
@@ -134,7 +133,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card text-white bg-dark mt-5" style="width: 18rem;">
+            <div class="card text-white bg-dark mt-5 p-card" style="width: 18rem;">
                 <img src="image/trr.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">InaTerror</h5>
@@ -268,6 +267,7 @@
         const projectWrapper = document.querySelector('#project-wrapper');
         const homeWrapper = document.querySelector('#home-wrapper');
         const menuItems = document.querySelectorAll('.menu-item');
+        const p_card = document.querySelectorAll('.p-card');
         const options = {
             root: null,
             rootMargin: '0px',
@@ -279,15 +279,26 @@
                 if (entry.isIntersecting) {
                     menuItems.forEach(item => {
                         item.classList.remove('active');
+                        document.querySelector('.wp-wrapper').classList.remove('wp-active');
+                        console.log('remove');
                     })
                     if (entry.target.id === 'courses-wrapper') {
                         document.querySelector('.cources').classList.add('active');
+                        document.querySelector('.wp-wrapper').classList.add('wp-active');
+                        console.log("wp-active");
+
                         console.log('courses');
                     } else if (entry.target.id === 'project-wrapper') {
                         document.querySelector('.project').classList.add('active');
+                        console.log('wp-desactive');
+
                     } else if (entry.target.id === 'home-wrapper') {
                         document.querySelector('.home').classList.add('active');
+                        console.log('nada');
+
                     }
+
+                    
                 }
             })
         }, options)
@@ -295,6 +306,7 @@
         observer.observe(coursesWrapper);
         observer.observe(projectWrapper);
         observer.observe(homeWrapper);
+        observer.observe(p_card);
 
         $('.carousel').on('touchstart', function (event) {
             const xClick = event.originalEvent.touches[0].pageX;
