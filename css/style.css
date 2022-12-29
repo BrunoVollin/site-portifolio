@@ -28,6 +28,7 @@ body {
   justify-content: center;
   flex-direction: column;
   scroll-snap-type: y proximity;
+
 }
 
 .section {
