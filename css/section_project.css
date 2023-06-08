@@ -14,6 +14,10 @@
 
 }
 
+.card {
+    height: 520px !important;
+}
+
 .container-project img {
     width: 100%;
     height: 300px;
