@@ -1,7 +1,7 @@
 #xp-wrapper {
   width: 100%;
   min-height: 100vh !important;
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@
 }
 
 #xp-container h3, p ,label, h4 {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #xp-container h3 {
@@ -33,10 +33,10 @@
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 10px;
-    color: white
+    color: rgb(64, 64, 64)
 }
 #xp-container label {
-    color:rgb(98, 98, 98);
+    color:rgb(179, 179, 179);
     display: flex;
     align-items: center;
 
@@ -51,7 +51,7 @@
 }
 
 .xp-card {
-    background-color: rgb(60, 60, 60);
+    background-color: rgba(235, 235, 235, 0.387);
     padding: 1rem;
     border-radius: 5px;
     margin-bottom: 1rem;

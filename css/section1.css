@@ -3,14 +3,20 @@
   height: 100vh !important;
 }
 
+.prof {
+  width: 300px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+
+}
+
 
 
 .wrapper {
   width: 100%;
   height: 100vh !important;
-  background-color: aqua;
-  /* background image */
-  background-image: url("../image/bg.jpg");
+  background-color: rgba(255, 255, 255, 0.1); /* 0.1 transparency */
+  background-image: url("../image/bg.png"); /* Image URL */
   background-size: cover;
   background-position: center;
 
@@ -19,10 +25,11 @@
   align-items: center;
 }
 
+
 .container {
   z-index: 2;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .home-icon:hover {
@@ -30,9 +37,7 @@
   box-shadow: 0 0 10px 6px rgba(255, 255, 255, 0.7);
 }
 /* when homeicon hover set color of iconify-icon */
-.home-icon:hover iconify-icon {
-  color: rgb(0, 0, 0);
-}
+
 
 .home-icon {
   width: 50px;
@@ -67,4 +72,17 @@
     width: 100%;
     height: fit-content
   }
+}
+
+.icon1:hover {
+  color: rgb(123, 123, 123)
+}
+
+.icon1 {
+  color: rgb(197, 197, 197);
+  transition: color 0.5s;
+}
+
+.icon1:hover {
+  color: rgb(123, 123, 123);
 }

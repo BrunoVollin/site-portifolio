@@ -51,7 +51,7 @@ body {
   font-size: small;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.221);
 }
 /* se for um celular desativar menu */
 @media (max-width: 768px) {
@@ -96,7 +96,7 @@ body {
 }
 
 .menu-item a {
-  color: rgb(255, 255, 255); /* cor padrão */
+  color: rgb(158, 158, 158); /* cor padrão */
   transition: color 0.5s; /* animação de mudança de cor com duração de 0.5 segundos */
 }
 
@@ -238,3 +238,5 @@ body {
 .prof-badge > span {
   margin-right: 5px;
 }
+
+

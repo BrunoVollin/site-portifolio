@@ -39,9 +39,9 @@
 <body>
     <div class="_topnav">
         <a href="javascript:void(0);" class="icon" id="icon-nav" onclick="myFunction()">
-            <iconify-icon icon="material-symbols:menu-rounded" style="color: white;" width="50"
-                height="50"></iconify-icon>
+            <iconify-icon  class="icon1" icon="material-symbols:menu-rounded" width="50" height="50"></iconify-icon>
         </a>
+        
         <div id="myLinks" onclick="hide();">
             <a class="menu-item " href="#" id="home">Home</a>
             <a class="menu-item " href="#project-wrapper" id="project">Projetos</a>
@@ -64,33 +64,45 @@
 
             <div class="wrapper">
                 <div class="container">
+                    <img class="prof" src="image/prof.jpg" alt="Avatar" class="image">
                     <h1>Bruno Almeida Vasconcelos</h1>
-                    <p>Desenvolvedor Mobile React Native</p>
+                    <p>Mobile Software Engenerineer</p>
+                    <iconify-icon  class="icon1" icon="vscode-icons:file-type-reactts" width="20" height="20"></iconify-icon>
+                    <iconify-icon  class="icon1" icon="vscode-icons:file-type-python" width="20" height="20"></iconify-icon>
+                    <iconify-icon  class="icon1" icon="vscode-icons:file-type-flutter" width="20" height="20"></iconify-icon>
+                    <iconify-icon  class="icon1" icon="vscode-icons:file-type-node" width="20" height="20"></iconify-icon>
+
+
+
+
                 </div>
             </div>
             <div id="wrapper-icons">
 
                 <a href="https://www.linkedin.com/in/brunovollin/" class="home-icon" class="mr-3" target="_blank">
-                    <iconify-icon icon="uil:linkedin" style="color: white;" width="40" height="40"></iconify-icon>
+                    <iconify-icon  class="icon1" icon="uil:linkedin"  width="40"
+                        height="40"></iconify-icon>
                 </a>
                 <a href="https://www.youtube.com/channel/UCCpvhv4UtVL5TIuxMF9lKrw" class="home-icon" class="mr-3"
                     target="_blank">
-                    <iconify-icon icon="ion:logo-youtube" style="color: white;" width="40" height="40"></iconify-icon>
+                    <iconify-icon  class="icon1" icon="ion:logo-youtube"  width="40"
+                        height="40"></iconify-icon>
                 </a>
                 <a href="https://github.com/BrunoVollin" class="home-icon" class="mr-3" target="_blank">
-                    <iconify-icon icon="akar-icons:github-fill" style="color: white;" width="40"
+                    <iconify-icon  class="icon1" icon="akar-icons:github-fill"  width="40"
                         height="40"></iconify-icon>
                 </a>
 
                 <a href="https://api.whatsapp.com/send?phone=35998630329&text=Oi. Tudo bem?" target="_blank"
                     class="wp-wrapper">
-                    <iconify-icon icon="ps:whatsapp" class="wp-icon" style="color: white;" width="50"
+                    <iconify-icon  class="icon1" icon="ps:whatsapp" class="wp-icon"  width="50"
                         height="50"></iconify-icon>
 
                 </a>
                 <!-- add email icon -->
                 <a href="mailto:contato.bruno.almeida22@gmail.com" class="home-icon" class="mr-3">
-                    <iconify-icon icon="mdi:email" style="color: white;" width="40" height="40"></iconify-icon>
+                    <iconify-icon  class="icon1" icon="mdi:email" width="40"
+                        height="40"></iconify-icon>
                 </a>
             </div>
         </div>
@@ -99,7 +111,7 @@
 
     <div class="section">
         <div id="project-wrapper">
-            <div class="card text-white bg-dark mr-3 mt-5 p-card" style="width: 18rem;">
+            <div class="card mr-3 mt-5 p-card" style="width: 18rem;">
                 <img src="image/ina.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Inacoin</h5>
@@ -108,12 +120,12 @@
                         desenvolvido com React Native, o que resultou em um aplicativo de fácil uso com uma aparência
                         elegante e robusta.</p>
 
-                    <iconify-icon icon="vscode-icons:file-type-reactts" width="20" height="20"></iconify-icon>
-                    <iconify-icon icon="vscode-icons:file-type-python" width="20" height="20"></iconify-icon>
+                    <iconify-icon  class="icon1" icon="vscode-icons:file-type-reactts" width="20" height="20"></iconify-icon>
+                    <iconify-icon  class="icon1" icon="vscode-icons:file-type-python" width="20" height="20"></iconify-icon>
                     <br>
 
                     <a href="https://inatel.br/imprensa/noticias/eventos/3592-fetin-celebra-40-anos-com-edicao-historica-muito-conteudo-e-projetos-que-contribuem-para-a-sociedade"
-                        class="badge btn" style="background-color: rgb(141, 124, 0); color: white" target="_blank">
+                        class="badge btn" style="background-color: #d5b500; color: rgb(255, 255, 255)" target="_blank">
                         🏆1° Lugar FETIN - 2021
                         <i class="bx bxl-react rct"></i>
                     </a>
@@ -121,22 +133,22 @@
                     <br>
                     <a href="https://play.google.com/store/apps/details?id=com.inacoin.appinacoin" target="_blank"
                         class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                            class="bi bi-google-play" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-google-play"
+                            viewBox="0 0 16 16">
                             <path
                                 d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
                         </svg>
                     </a>
                     <a href="https://www.instagram.com/inacoin_wallet/" target="_blank" class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                            class="bi bi-google-play" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-google-play"
+                            viewBox="0 0 16 16">
                             <path
                                 d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
                         </svg>
                     </a>
                 </div>
             </div>
-            <div class="card text-white bg-dark mr-3 mt-5 p-card" style="width: 18rem;">
+            <div class="card mr-3 mt-5 p-card" style="width: 18rem;">
                 <img src="image/help.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Help Remember</h5>
@@ -146,12 +158,12 @@
                         principais protocolos das organizações de saúde e tem como objetivo auxiliar essas pessoas a
                         manter a organização.
                     </p>
-                    <iconify-icon icon="vscode-icons:file-type-flutter" width="20" height="20"></iconify-icon>
+                    <iconify-icon  class="icon1" icon="vscode-icons:file-type-flutter" width="20" height="20"></iconify-icon>
                     <br>
                     <br>
                     <a href="https://github.com/BrunoVollin/help_rem" target="_blank" class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                            class="bi bi-google-play" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-google-play"
+                            viewBox="0 0 16 16">
                             <path
                                 d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
 
@@ -159,7 +171,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card text-white bg-dark mt-5 p-card" style="width: 18rem;">
+            <div class="card     mt-5 p-card" style="width: 18rem;">
                 <img src="image/trr.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">InaTerror</h5>
@@ -168,14 +180,14 @@
                         persistência dos dados. No back-end, foi utilizado Python para gerar informações sobre os
                         fantasmas através de inteligência artificial.</p>
 
-                    <iconify-icon icon="vscode-icons:file-type-node" width="20" height="20"></iconify-icon>
-                    <iconify-icon icon="logos:python" width="20" height="20"></iconify-icon>
-                    <iconify-icon icon="logos:react" width="20" height="20"></iconify-icon>
+                    <iconify-icon  class="icon1" icon="vscode-icons:file-type-node" width="20" height="20"></iconify-icon>
+                    <iconify-icon  class="icon1" icon="logos:python" width="20" height="20"></iconify-icon>
+                    <iconify-icon  class="icon1" icon="logos:react" width="20" height="20"></iconify-icon>
                     <br>
                     <br>
                     <a href="https://github.com/S204-Inatel-2022-1/inaterror-fe" target="_blank" class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                            class="bi bi-google-play" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-google-play"
+                            viewBox="0 0 16 16">
                             <path
                                 d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
 
@@ -299,7 +311,7 @@
                             <span>
                                 React Native
                             </span>
-                            <iconify-icon icon="vscode-icons:file-type-reactts" width="20" height="20"></iconify-icon>
+                            <iconify-icon  class="icon1" icon="vscode-icons:file-type-reactts" width="20" height="20"></iconify-icon>
                         </div>
                     </div>
                     <p>Desenvolver aplicações financeiras móveis com React Native, seguindo metodologias ágeis e
@@ -322,13 +334,13 @@
                             <span>
                                 React Native
                             </span>
-                            <iconify-icon icon="vscode-icons:file-type-reactts" width="20" height="20"></iconify-icon>
+                            <iconify-icon  class="icon1" icon="vscode-icons:file-type-reactts" width="20" height="20"></iconify-icon>
                         </div>
                         <div class="prof-badge" style="border-color: #46c5fa; color:#46c5fa; ">
                             <span>
                                 Flutter
                             </span>
-                            <iconify-icon icon="logos:flutter"></iconify-icon>
+                            <iconify-icon  class="icon1" icon="logos:flutter"></iconify-icon>
                         </div>
                     </div>
                     <p>Integrar as iniciativas de desenvolvimento do laboratório, criar materiais de treinamento e
@@ -349,20 +361,20 @@
                             <span>
                                 React Native
                             </span>
-                            <iconify-icon icon="vscode-icons:file-type-reactts" width="20" height="20"></iconify-icon>
+                            <iconify-icon  class="icon1" icon="vscode-icons:file-type-reactts" width="20" height="20"></iconify-icon>
                         </div>
                         <div class="prof-badge" style="border-color: #46c5fa; color:#46c5fa; ">
                             <span>
                                 Flutter
                             </span>
-                            <iconify-icon icon="logos:flutter"></iconify-icon>
+                            <iconify-icon  class="icon1" icon="logos:flutter"></iconify-icon>
                         </div>
                         <!-- node -->
                         <div class="prof-badge " style="border-color: #3c873a; color:#3c873a; ">
                             <span>
                                 NodeJS
                             </span>
-                            <iconify-icon icon="logos:nodejs-icon" width="20" height="20"></iconify-icon>
+                            <iconify-icon  class="icon1" icon="logos:nodejs-icon" width="20" height="20"></iconify-icon>
                         </div>
 
 
@@ -386,7 +398,7 @@
                             <span>
                                 MongoDB
                             </span>
-                            <iconify-icon icon="vscode-icons:file-type-mongo" width="20" height="20"></iconify-icon>
+                            <iconify-icon  class="icon1" icon="vscode-icons:file-type-mongo" width="20" height="20"></iconify-icon>
                         </div>
 
                         <!-- prof-badge neo4j -->
@@ -394,7 +406,7 @@
                             <span>
                                 Neo4J
                             </span>
-                            <iconify-icon icon="simple-icons:neo4j" style="color: #46c5fa;"></iconify-icon>
+                            <iconify-icon  class="icon1" icon="simple-icons:neo4j" style="color: #46c5fa;"></iconify-icon>
                         </div>
 
                         <!-- pythonn -->
@@ -402,7 +414,7 @@
                             <span>
                                 Python
                             </span>
-                            <iconify-icon icon="vscode-icons:file-type-python" width="20" height="20"></iconify-icon>
+                            <iconify-icon  class="icon1" icon="vscode-icons:file-type-python" width="20" height="20"></iconify-icon>
                         </div>
 
 
@@ -416,36 +428,36 @@
             </div>
         </div>
     </div>
-    <div class="section">
+    <!-- <div class="section">
         <div id="contacts-wrapper">
         
             <a href="mailto:contato.bruno.almeida22@gmail.com" class="contacts-home-icon" class="mr-3">
-                <iconify-icon icon="mdi:email" style="color: white;" width="40" class="mr-3"
+                <iconify-icon  class="icon1" icon="mdi:email" style="color: white;" width="40" class="mr-3"
                     height="40"></iconify-icon>
                 contato.bruno.almeida22@gmail.com
             </a>
 
             <a href="https://www.youtube.com/channel/UCCpvhv4UtVL5TIuxMF9lKrw" class="contacts-home-icon" class="mr-3"
                 target="_blank">
-                <iconify-icon icon="ion:logo-youtube" style="color: white;" width="40" height="40"
+                <iconify-icon  class="icon1" icon="ion:logo-youtube" style="color: white;" width="40" height="40"
                     class="mr-3"></iconify-icon>
                 @brunovollinprogramacao2001
             </a>
 
        
                 <a href="https://www.linkedin.com/in/brunovollin/" class="contacts-home-icon" class="mr-3" target="_blank">
-                    <iconify-icon icon="uil:linkedin" style="color: white;" width="40" height="40"
+                    <iconify-icon  class="icon1" icon="uil:linkedin" style="color: white;" width="40" height="40"
                         class="mr-3"></iconify-icon>
                         linkedin.com/in/brunovollin/
                 </a>
                 <a href="https://github.com/BrunoVollin" class="contacts-home-icon" class="mr-3" target="_blank">
-                    <iconify-icon icon="akar-icons:github-fill" style="color: white;" width="40" class="mr-3"
+                    <iconify-icon  class="icon1" icon="akar-icons:github-fill" style="color: white;" width="40" class="mr-3"
                         height="40"></iconify-icon>
                         github.com/BrunoVollin
                 </a>
 
         </div>
-    </div>
+    </div> -->
 
 
 
